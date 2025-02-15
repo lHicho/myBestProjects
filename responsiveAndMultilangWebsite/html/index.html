@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" id="responsiveLink" href="../css/responsiveEn.css">
+    <title data-lang="title">Sign in.</title>
+</head>
+<body>
+    <div class="noncover" id="cover" onclick="hideSideBar()"></div>
+    <header>
+        <div class="logo">
+            <h1 data-lang="logo">Hicham.</h1>
+        </div>
+        <div class="navdiv">
+            <select id="langsel" onchange="uplang()">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+                <option value="fr">Francais</option>
+            </select>
+            <button class="openbutton" onclick="showSideBar()"><img src="../img/menu.svg" alt="svg"></button>
+            <nav id="sideBar">
+                <ul>
+                    <li class="cancelbutton"><button onclick="hideSideBar()"><img src="../img/close.svg" alt="svg"></button><h1 data-lang="menu">Menu</h1></li>
+                    <li><a data-lang="home" href="#">Home</a></li>
+                    <li><a data-lang="about" href="#">About me</a></li>
+                    <li><a data-lang="contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="loginFormSec">
+        <div class="formdiv">
+            <h1 data-lang="sign" >Sign in.</h1>
+            <p data-lang="with" >with.</p>
+            <div class="socialmedia">
+                <button title="Google"><img src="../img/google.png" width="30px" height="30px"></button>
+                <button title="Apple"><img src="../img/apple.png" width="30px" height="30px"></button>
+                <button title="Microsoft"><img src="../img/microsoft.png" width="30px" height="30px"></button>
+                <button title="Facebook"><img src="../img/facebook.png" width="30px" height="30px"></button>
+            </div>
+            <p data-lang="useemail" >or use e-mail.</p>
+        </div>
+        <form class="loginForm">
+            <input data-lang="eou" class="textInput" type="text" id="e-mail" placeholder="E-mail or username." required>
+            <input data-lang="pass" class="textInput" type="password" id="password" placeholder="Your password." required>
+            <div class="content">
+                <div class="inputscontainer">
+                    <input type="checkbox" id="remember">
+                    <label data-lang="remember" for="remember">Remember me.</label>
+                </div>
+                    <a data-lang="forget" href="#">Did you forget your password ?</a>
+            </div>
+            <button data-lang="sign2">Sign in</button>
+        </form>
+    </section>
+<script src="../js/langchange.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
