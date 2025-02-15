@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(90deg, #ffffff, #006eff45);
+    width: 100%;
+    height: 100vh;
+    transition: 1000ms;
+}
+.bossDiv{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1px 1px 5px 1px;
+    width: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.maindiv{
+    background-color: #f1f7ff;
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+    max-height: 500px;
+    max-width: 50%;
+}
+.maindiv .signindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.maindiv .signindiv h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+    color: #006eff;
+}
+.maindiv2 .signindiv h1{
+    color: #ff7700;
+}
+.maindiv .signindiv .aButtons{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    padding: 5px;
+
+}
+.maindiv .signindiv .aButtons button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: solid 2px #a2a7ad;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.maindiv .signindiv .aButtons button img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.maindiv .signindiv p{
+    font-size: 13px;
+    color: #a2a7ad;
+    margin: 15px 0;
+}
+.maindiv .signindiv .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding: 5px;
+}
+.maindiv .signindiv .inputs .ino{
+    padding: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+.maindiv .signindiv .inputs .ino input{
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: solid 2px #006eff;
+    border-radius: 15px;
+    width: 100%;
+}
+.maindiv2 .signindiv .inputs .ino input{
+    border: solid 2px #ff7700;
+}
+.maindiv .signindiv .inputs .ino input::placeholder{
+    color: #006eff;
+}
+.maindiv2 .signindiv .inputs .ino input::placeholder{
+    color: #ff7700;
+}
+.maindiv .signindiv .inputs .ino i{
+    color: #006eff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+.maindiv2 .signindiv .inputs .ino i{
+    color: #ff7700;
+}
+.maindiv .signindiv .inputs .ins{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.maindiv .signindiv .inputs .ins div input{
+    cursor: pointer;
+}
+.maindiv .signindiv .inputs .ins div label{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.maindiv .signindiv .inputs .ins a{
+    text-decoration: none;
+    color: #006eff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.maindiv2 .signindiv .inputs .ins a{
+    color: #ff7700;
+}
+.maindiv .signindiv .inputs button{
+    padding: 15px 30px;
+    margin: 30px 0 15px 0;
+    border: solid #006eff 2px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #006eff;
+    color: #ffffff;
+    cursor: pointer;
+}
+.maindiv2 .signindiv .inputs button{
+    border: solid #ff7700 2px;
+    background-color: #ff7700;
+}
+.bossDiv .coverdiv{
+    z-index: 999;
+    background-color: #006eff;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    animation: linear;
+}
+.bossDiv .coverdiv h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.bossDiv .coverdiv p{
+    font-size:20px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.bossDiv .coverdiv button{
+    font-size:20px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: solid #ffffff 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}

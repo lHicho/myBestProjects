@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/user.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/loginform1.css">
+</head>
+<body>
+    <div class="bossDiv">
+        <div class="maindiv maindiv1">
+            <div class="signindiv">
+                <h1>Sign In.</h1>
+                <div class="aButtons">
+                    <button><img src="../imgs/google.png"></button>
+                    <button><img src="../imgs/microsoft.png"></button>
+                    <button><img src="../imgs/facebook.png"></button>
+                    <button><img src="../imgs/apple.png"></button>
+                </div>
+                <p>Or use e-mail</p>
+                <form class="inputs">
+                    <div class="ino">
+                        <input required placeholder="Email" type="text" id="emailInput">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="ino">
+                        <input required placeholder="password" type="password" id="passInput">
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+                    <div class="ins">
+                        <div>
+                            <input type="checkbox" id="rememberInput">
+                            <label for="rememberInput">Remember me</label>
+                        </div>
+                        <a href="#">Forget your password ?</a>
+                    </div>
+                    <button>Sign In</button>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="maindiv maindiv2">
+            <div class="signindiv">
+                <h1>Regester.</h1>
+                <div class="aButtons" style="height: 10%;">
+                    <button><img src="../imgs/google.png"></button>
+                    <button><img src="../imgs/microsoft.png"></button>
+                    <button><img src="../imgs/facebook.png"></button>
+                    <button><img src="../imgs/apple.png"></button>
+                </div>
+                <p>Or use e-mail</p>
+                <form class="inputs">
+                    <div class="ino">
+                        <input required placeholder="Name" type="text" id="user">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="ino">
+                        <input required placeholder="Email" type="text" id="emailInput2">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="ino">
+                        <input required placeholder="password" type="password" id="passInput2">
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+                    <div class="ins">
+                        <div>
+                            <input required type="checkbox" id="terms">
+                            <label for="terms">I read and agree <a href="#">parivce policy</a> and <a href="#">terms of use</a></label>
+                        </div>
+                    </div>
+                    <button style="margin-top: 10px;">Regester</button>
+                </form>
+            </div>
+        </div>
+        <div class="coverdiv">
+            <h1>Hi, friend😁.</h1>
+            <p>If you don't have an acount yet click here.</p>
+            <button onclick="coverit()">Regester</button>
+        </div>
+    </div>
+    <script src="../js/loginform1.js"></script>
+</body>
+</html>
