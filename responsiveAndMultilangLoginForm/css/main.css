@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Baloo Bhaijaan 2", "Lalezar",serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#a1ece1, #ffffff);
+    direction: ltr;
+}
+header{
+    background: linear-gradient(#54cebc, #42a495);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: solid 2px #ffffff;
+    line-height: 50px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo h1{
+    color: #d9edff;
+    font-size: 35px;
+    font-weight: 800;
+    text-shadow: 3px 3px 10px #414b4a;
+    cursor: default;
+}
+header .navdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+header .navdiv select{
+    border: solid 3px #d9edff;
+    background-color: #42a495;
+    color: #d9edff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 0px 10px;
+    height: 75%;
+}
+header .navdiv select option{
+    background-color: #42a495;
+    font-size: 15px;
+    font-weight: 700;
+}
+header .navdiv nav{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+header .navdiv nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 15px;
+}
+header .navdiv nav ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+header .navdiv nav ul .cancelbutton{
+    border-bottom: 3px #d9edff solid;
+    padding-bottom: 10px;
+    display: none;
+}
+header .navdiv nav ul .cancelbutton button{
+    color: #d9edff;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+header .navdiv .openbutton{
+    color: #d9edff;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+header .navdiv nav ul .cancelbutton h1{
+    color: #d9edff;
+    font-size: 25px;
+    font-weight: 700;
+}
+header .navdiv nav ul li a{
+    text-decoration: none;
+    color: #d9edff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+header .navdiv nav ul li a:hover{
+    color: #ffffff;
+    transform: scale(1.1, 1.1);
+}
+.loginFormSec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: min(800px, 80%);
+    border: solid 3px #42a495;
+    background: linear-gradient(90deg, #e4f3ff, #ffffff);
+    border-radius: 5px;
+    padding: 20px;
+    align-self: center;
+    line-height: 40px;
+    justify-self: center;
+}
+.loginFormSec .formdiv{
+    display: flex;
+    flex-direction: column;
+}
+.loginFormSec .formdiv h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #42a495;
+    margin-bottom: 20px;
+}
+.loginFormSec .formdiv .socialmedia{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px 0;
+}
+.loginFormSec .formdiv .socialmedia button{
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: #42a495 solid 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.loginFormSec .formdiv .socialmedia button:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 1px 1px 5px #42a495, -2px -2px 5px #bbfff5; 
+}
+.loginFormSec .formdiv .socialmedia button:active{
+    transform: scale(1, 1); 
+    box-shadow: 0px 0px 0px #42a495, -0px -0px 0px #bbfff5; 
+}
+.loginFormSec .formdiv p{
+    color: #515857;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.loginFormSec form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.loginFormSec form .textInput{
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 3px #42a495;
+    margin: 10px 0;
+    font-size: 18px;
+    width: 100%;
+    color: #42a495;
+    font-weight: 600;
+}
+.loginFormSec form .textInput::placeholder{
+    color: #42a49085;
+}
+.loginFormSec form .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+#remember{
+    cursor: pointer;
+}
+.loginFormSec form .content div label{
+    color: #42a495;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginFormSec form .content a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #42a495;
+}
+.loginFormSec form .content a:hover{
+    color: #54cebc;
+    text-decoration: underline;
+}
+.loginFormSec form button{
+    padding: 10px;
+    margin-top: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #42a495;
+    color: #ffffff;
+    width: 50%;
+    align-self: center;
+    transition: 0.7s;
+}
+.loginFormSec form button:hover{
+    background-color: #ffffff;
+    border: 3px solid #42a495;
+    color: #42a495;
+    box-shadow: 2px 2px 5px #42a495;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #293c3b5a;
+    z-index: 9;
+    backdrop-filter: blur(5px);
+    display: block;
+}
+.noncover{
+    display: none;
+}
